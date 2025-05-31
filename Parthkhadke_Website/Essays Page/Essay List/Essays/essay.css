@@ -1,0 +1,211 @@
+/* Base Styles */
+
+:root {
+
+  --text-light: #333;
+
+  --text-dark: #f0f0f0;
+
+  --bg-light: #ffffff;
+
+  --bg-dark: #121212;
+
+  --synopsis-light: #555;
+
+  --synopsis-dark: #b0b0b0;
+
+  --date-light: #777;
+
+  --date-dark: #999;
+
+  --divider-light: #ddd;
+
+  --divider-dark: #444;
+
+}
+
+body {
+
+  font-family: Georgia, serif;
+
+  line-height: 1.6;
+
+  margin: 0;
+
+  padding: 10px;
+
+  background: var(--bg-light);
+
+  color: var(--text-light);
+
+  transition: background 0.3s, color 0.3s;
+
+}
+
+/* Dark Mode Toggle */
+
+#darkModeToggle {
+
+  position: absolute;
+
+  top: 20px;
+
+  right: 20px;
+
+  background: transparent;
+
+  border: none;
+
+  font-size: 1.25rem;
+
+  cursor: pointer;
+
+  z-index: 100;
+
+}
+
+/* Blog Header */
+
+.blog-header {
+
+  max-width: 600px;
+
+  margin: 40px auto 0;
+
+  padding: 0 20px;
+
+  transition: all 0.3s;
+
+}
+
+h1 {
+
+  font-weight: bold;
+
+  font-size: 2rem;
+
+  margin-bottom: 8px;
+
+}
+
+.synopsis {
+
+  font-size: 1.1rem;
+
+  color: var(--synopsis-light);
+
+  font-style: italic;
+
+  margin-bottom: 8px;
+
+}
+
+.date {
+
+  font-size: 0.9rem;
+
+  color: var(--date-light);
+
+  margin-bottom: 16px;
+
+}
+
+hr.divider {
+
+  border: 0;
+
+  height: 1px;
+
+  background: var(--divider-light);
+
+  margin: 24px 0;
+
+}
+
+/* Essay Body */
+
+.essay-body {
+
+  max-width: 600px;
+
+  margin: px auto 0;
+
+  line-height: 1.6;
+
+  font-size: 1.1rem;
+
+}
+
+.essay-body p {
+
+  margin-bottom: 1.5em;
+
+  text-align: left;
+
+}
+
+/* Dark Mode Styles */
+
+body.dark-mode {
+
+  background: var(--bg-dark);
+
+  color: var(--text-dark);
+
+}
+
+.dark-mode .synopsis {
+
+  color: var(--synopsis-dark);
+
+}
+
+.dark-mode .date {
+
+  color: var(--date-dark);
+
+}
+
+.dark-mode hr.divider {
+
+  background: var(--divider-dark);
+
+}
+
+.dark-mode .essay-body {
+
+  color: var(--text-dark);
+
+}
+
+/* System Preference Detection */
+
+@media (prefers-color-scheme: dark) {
+
+  body:not(.light-mode) {
+
+    background: var(--bg-dark);
+
+    color: var(--text-dark);
+
+  }
+
+  body:not(.light-mode) .synopsis {
+
+    color: var(--synopsis-dark);
+
+  }
+
+  body:not(.light-mode) .date {
+
+    color: var(--date-dark);
+
+  }
+
+  body:not(.light-mode) hr.divider {
+
+    background: var(--divider-dark);
+
+  }
+
+}

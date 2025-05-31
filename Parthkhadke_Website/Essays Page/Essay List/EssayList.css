@@ -1,0 +1,36 @@
+body{
+    background-color: lightgray;
+}
+#page-title{
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+    border-top: 1px;
+    border-bottom: 2px;
+    margin-bottom: 20px;  
+}
+
+#content{
+    background-color: white;
+    text-align: center;
+    margin-top: 20px;
+   border: 1px solid gray;
+    
+}
+
+.essay-title{
+    color: black;
+}
+
+.essay-row{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration:none;
+}
+a:clicked,
+a:visited {
+  text-decoration: line-through;
+}

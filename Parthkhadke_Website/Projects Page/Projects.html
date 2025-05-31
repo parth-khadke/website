@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <style>
+        :root {
+            --primary-blue: #1976d2;
+            --dark-blue: #0d47a1;
+            --light-blue: #e3f2fd;
+            --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --border-radius: 10px;
+            --text-dark: #212121;
+            --text-light: #757575;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            color: var(--dark-blue);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        .projects-grid {
+            display: block;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            align-content: left
+            background: white;
+            margin: 10px 10px 20px 10px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        svg {
+            width: 100%;
+            height: 200px;
+            object-fit: fit;
+            border-bottom: 1px solid #eee;
+        }
+        
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: fit;
+            border-bottom: 1px solid #eee;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+            text-align: left;
+        }
+
+        .project-title {
+            margin: 0 0 0.75rem 0;
+            font-size: 1.4rem;
+            color: var(--dark-blue);
+        }
+
+        .project-description {
+            margin: 0 0 1.25rem 0;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tech-tag {
+            background-color: var(--light-blue);
+            color: var(--dark-blue);
+            padding: 0.35rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Projects</h1>
+            <p class="subtitle">A collection of my recent work</p>
+        </header>
+        
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <img src="content://com.android.externalstorage.documents/document/primary%3AAppProjects%2FParthkhadke_Website%2FProjects%20Page%2Fsunset.jpg" alt="project1"></img>
+                <div class="project-content">
+                    <h3 class="project-title">Alphabet Ninja</h3>
+                    <p class="project-description">
+                        A Java based typing game.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Java</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <img src="content://com.android.externalstorage.documents/document/primary%3AAppProjects%2FParthkhadke_Website%2FProjects%20Page%2Fsunset.jpg" alt="project1"></img>
+                <div class="project-content">
+                    <h3 class="project-title">Numerology Calculator</h3>
+                    <p class="project-description">
+                        A simple graphical calculator for numerological calculations.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Java</span>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <img src="content://com.android.externalstorage.documents/document/primary%3AAppProjects%2FParthkhadke_Website%2FProjects%20Page%2Fsunset.jpg" alt=""></img>
+                <div class="project-content">
+                    <h3 class="project-title">parthkhadke.com</h3>
+                    <p class="project-description">
+                        A personal website featuring projects, essays, blogs and much more.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
